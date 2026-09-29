@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Михаил Ероян — контакты</title>
+  <meta name="description" content="Свяжитесь со мной в Telegram, WhatsApp или по телефону">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;800&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #e6edf4;
+      --card: #ffffff;
+      --ink: #14213d;
+      --muted: #5b6b82;
+      --telegram: #229ed9;
+      --whatsapp: #1fa855;
+      --phone: #14213d;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      min-height: 100vh;
+      display: grid;
+      place-items: center;
+      padding: 24px 16px;
+      background: var(--bg);
+      color: var(--ink);
+      font-family: "Manrope", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+    }
+
+    .card {
+      width: 100%;
+      max-width: 400px;
+      background: var(--card);
+      border-radius: 28px;
+      padding: 36px 24px 28px;
+      text-align: center;
+      box-shadow: 0 20px 50px -20px rgba(20, 33, 61, 0.35);
+    }
+
+    .photo {
+      width: 148px;
+      height: 148px;
+      margin: 0 auto 20px;
+      border-radius: 50%;
+      overflow: hidden;
+      background: var(--bg);
+      display: grid;
+      place-items: center;
+      font-size: 48px;
+      font-weight: 800;
+      color: var(--muted);
+      box-shadow: 0 0 0 6px var(--card), 0 0 0 8px var(--ink);
+    }
+    .photo img { width: 100%; height: 100%; object-fit: cover; object-position: 50% 8%; display: block; }
+
+    h1 { font-size: 26px; font-weight: 800; line-height: 1.2; }
+    .role { margin-top: 6px; color: var(--muted); font-size: 16px; }
+
+    .links { margin-top: 28px; display: grid; gap: 12px; }
+
+    .btn {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      padding: 14px 18px;
+      border-radius: 16px;
+      color: #fff;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 17px;
+      text-align: left;
+      transition: transform 0.15s ease, filter 0.15s ease;
+    }
+    .btn:hover { filter: brightness(1.08); }
+    .btn:active { transform: scale(0.98); }
+    .btn:focus-visible { outline: 3px solid var(--ink); outline-offset: 3px; }
+    .btn svg { width: 26px; height: 26px; flex: none; fill: currentColor; }
+    .btn small { display: block; font-weight: 400; font-size: 13px; opacity: 0.85; }
+
+    .telegram { background: var(--telegram); }
+    .whatsapp { background: var(--whatsapp); }
+    .phone    { background: var(--phone); }
+
+    @media (prefers-reduced-motion: reduce) {
+      .btn { transition: none; }
+    }
+  </style>
+</head>
+<body>
+  <main class="card">
+
+    <!-- 1. ФОТО: положите файл photo.jpg рядом с index.html -->
+    <div class="photo">
+      <img src="photo.jpg" alt="Михаил Ероян"
+           onerror="this.parentNode.textContent='МЕ';">
+    </div>
+
+    <!-- 2. ИМЯ И ДОЛЖНОСТЬ -->
+    <h1>Михаил Ероян</h1>
+    <p class="role">Менеджер по привлечению корпоративных клиентов</p>
+
+    <div class="links">
+
+      <!-- 3. TELEGRAM: замените username на свой логин без @ -->
+      <a class="btn telegram" href="https://t.me/maevik" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9.78 15.17l-.4 4.23c.58 0 .83-.25 1.13-.55l2.71-2.6 5.62 4.12c1.03.57 1.76.27 2.04-.95l3.7-17.35h0c.33-1.53-.55-2.13-1.55-1.76L1.3 9.6C-.2 10.19-.18 11.03 1.05 11.4l5.57 1.74L19.55 5c.61-.4 1.17-.18.71.22z"/></svg>
+        <span>Telegram<small>@maevik</small></span>
+      </a>
+
+      <!-- 4. WHATSAPP: номер в формате 79001234567 (только цифры, без + и пробелов) -->
+      <a class="btn whatsapp" href="https://wa.me/79262894141" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38a9.9 9.9 0 004.74 1.21c5.46 0 9.91-4.45 9.91-9.91S17.5 2 12.04 2zm5.8 14.15c-.25.69-1.43 1.32-1.97 1.37-.5.05-1.13.07-1.82-.11-.42-.13-.96-.31-1.65-.61-2.9-1.25-4.79-4.17-4.94-4.37-.14-.19-1.18-1.57-1.18-3s.75-2.12 1.01-2.41c.26-.29.57-.36.76-.36l.55.01c.18 0 .42-.07.65.5.25.59.84 2.04.91 2.19.07.15.12.32.02.51-.1.2-.15.32-.29.49-.15.17-.31.38-.44.51-.15.15-.3.31-.13.6.17.29.76 1.25 1.63 2.03 1.12 1 2.06 1.31 2.35 1.46.29.15.46.12.63-.07.17-.2.73-.85.93-1.14.19-.29.39-.24.65-.15.27.1 1.7.8 1.99.95.29.15.49.22.56.34.07.12.07.7-.18 1.39z"/></svg>
+        <span>WhatsApp<small>Написать сообщение</small></span>
+      </a>
+
+      <!-- 5. ТЕЛЕФОН: в href номер без пробелов, в тексте — как удобно читать -->
+      <a class="btn phone" href="tel:+79262894141">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.62 10.79a15.05 15.05 0 006.59 6.59l2.2-2.2a1 1 0 011.02-.24c1.12.37 2.33.57 3.57.57a1 1 0 011 1V20a1 1 0 01-1 1C10.61 21 3 13.39 3 4a1 1 0 011-1h3.5a1 1 0 011 1c0 1.25.2 2.45.57 3.57a1 1 0 01-.25 1.02l-2.2 2.2z"/></svg>
+        <span>Позвонить<small>+7 926 289-41-41</small></span>
+      </a>
+
+    </div>
+  </main>
+</body>
+</html>
